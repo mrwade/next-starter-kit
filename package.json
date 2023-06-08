@@ -12,6 +12,7 @@
     "db:migrate:make": "TS_NODE_COMPILER_OPTIONS='{ \"module\": \"commonjs\" }' knex migrate:make"
   },
   "dependencies": {
+    "@faker-js/faker": "^8.0.2",
     "@prisma/client": "4.15.0",
     "@types/node": "20.2.5",
     "@types/react": "18.2.9",
