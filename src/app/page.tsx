@@ -20,11 +20,18 @@ export default async function Home() {
   };
 
   return (
-    <main className="flex min-h-screen flex-col p-24">
-      <Button onClick={generatePosts}>Generate Posts</Button>
+    <main className="flex min-h-screen flex-col items-start p-24">
+      <Button
+        className="bg-black disabled:bg-slate-600 text-white p-5 mb-5 rounded-lg"
+        onClick={generatePosts}
+      >
+        Generate Posts
+      </Button>
 
       {posts.map((post) => (
-        <div key={post.id}>{post.content}</div>
+        <div key={post.id} className="bg-white mb-3 px-5 py-3 rounded-md">
+          {post.content}
+        </div>
       ))}
     </main>
   );
